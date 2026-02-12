@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Boldo Raper</title>
+</head>
+<body bgcolor="#eeeeee">
+
+    <div align="center">
+        <h1>BOLDO RAPER</h1>
+        <hr width="50%">
+
+        <p>
+            <b>Boldos raped:</b> <span id="score">0</span><br>
+            <b>RPS (Rapes Per Second):</b> <span id="rps">0</span>
+        </p>
+
+        <p>
+            <button onclick="saveGame()">Save Game</button>
+            <button onclick="triggerLoad()">Load Game</button>
+            <input type="file" id="file-selector" style="display:none" accept=".json,.txt">
+        </p>
+
+        <hr width="30%">
+
+        <p>
+            <a href="javascript:void(0)" onclick="clickBoldo()">
+                <img src="boldo.png" width="150" alt="RAPE ME" border="0">
+            </a>
+            <br>
+            <i>(Click the image to rape boldo!)</i>
+        </p>
+
+        <hr width="80%">
+
+        <h3>UPGRADE SHOP</h3>
+
+        <table border="1" cellpadding="10" cellspacing="0" width="80%">
+            <thead>
+                <tr bgcolor="#cccccc">
+                    <th>Upgrade Name</th>
+                    <th>Description</th>
+                    <th>Price</th>
+                    <th>Owned</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody id="upgrades-table-body">
+                </tbody>
+        </table>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
